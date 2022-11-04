@@ -1,13 +1,3 @@
-interface Missions {
-  data: string;
-}
-
-interface Mission {
-  id: string;
-  name: string;
-  payloads: Payload[];
-}
-
 const enum Country {
   Thailand = "Thailand",
   Canada = "Canada",
@@ -17,7 +7,7 @@ const enum Country {
   HongKong = "Hong Kong",
 }
 
-interface Payload {
+export interface Payload {
   id: string;
   payload_mass_kg: number;
   nationality: Country;

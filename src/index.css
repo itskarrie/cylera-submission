@@ -6,4 +6,19 @@
   body {
     @apply bg-gray-50;
   }
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    display: none;
+  }
+
+  ::-webkit-scrollbar-track {
+    border-radius: 100vh;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #e0cbcb;
+    border-radius: 100vh;
+    border: 3px solid #f8fafc;
+  }
 }

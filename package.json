@@ -3,33 +3,39 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@headlessui/react": "^1.7.4",
+    "@heroicons/react": "^2.0.13",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.11.44",
+    "@types/node-fetch": "^2.6.2",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
+    "babel": "^6.23.0",
+    "chart.js": "^3.9.1",
+    "chartjs-plugin-datalabels": "^2.1.0",
+    "fs": "^0.0.1-security",
+    "node-fetch": "^3.2.10",
+    "node-static": "^0.7.11",
     "react": "^18.2.0",
+    "react-chartjs-2": "^4.3.1",
     "react-dom": "^18.2.0",
-    "react-scripts": "^2.1.3",
+    "react-promise": "^3.0.2",
+    "react-scripts": "^5.0.1",
     "typescript": "^4.7.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest",
     "eject": "react-scripts eject",
     "lint": "eslint --fix"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest",
-      "eslint:recommended",
-      "plugin:react/recommended"
-    ]
+    "extends": []
   },
   "browserslist": {
     "production": [
@@ -49,6 +55,8 @@
     "eslint-plugin-react": "^7.31.10",
     "jest": "^27.5.1",
     "prettier": "^2.7.1",
-    "tailwindcss": "^3.1.6"
+    "react-native-fs": "^2.20.0",
+    "tailwindcss": "^3.1.6",
+    "ts-jest": "^29.0.3"
   }
 }
