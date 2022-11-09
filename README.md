@@ -71,3 +71,33 @@ This is a [React.js](https://reactjs.org) project bootstrapped with [`create-rea
 2. Run the development server: `npm run start`
 3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the app.
 4. Make changes in `src/` and elsewhere as needed to implement your solution.
+
+
+## Post-Submission Notes
+
+### Getting Start
+Make sure you have node v19.0.1 installed, then do the following:
+
+1. Serve missions.json
+    1. Verify you have `http-server` installed
+        1. If not, run `npm install http-server -g`
+    1. Go to the `dataset folder`
+    1. Run `http-server --cors`. You will need to keep this running
+1. Build tailwind CSS
+   1. Run `npx tailwindcss -i ./src/index.css -o ./public/output.css`
+1. Run the app app
+    1.  In the root directory, run `yarn add` (to install all required packages)
+    1.  Run `yarn start`
+    
+After following the above steps, if you go to http://localhost:3000/ you should be able to see the following:
+
+https://user-images.githubusercontent.com/117330527/200905119-37b9469c-7083-4df4-91ff-ca8acc8f04a9.mov
+
+
+
+### Notes
+- I've switched from npm to yarn because there were errors when installing because there is an unresolved bug
+- Design differences: there were a few places where non-standard sizes (25 vs 24) were used. Typically I would check with the designer if this was intended, but for this I've decided to just round to standard sizes
+- There are a few places where I am using HeroIcons rather than the SVG
+- One place I've fallen short is not having a caret under the tooltip
+
